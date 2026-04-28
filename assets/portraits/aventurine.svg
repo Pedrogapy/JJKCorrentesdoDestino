@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#134e4a"/>
+      <stop offset="1" stop-color="#0b0d12"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.45"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g)"/>
+  <circle cx="730" cy="180" r="210" fill="#facc15" opacity="0.12"/>
+  <circle cx="160" cy="1060" r="260" fill="#facc15" opacity="0.08"/>
+  <g opacity="0.18" stroke="#facc15" stroke-width="3" fill="none">
+    <path d="M90 240H810M90 330H810M90 420H810M90 510H810"/>
+    <path d="M150 140V1060M750 140V1060"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="450" cy="385" r="145" fill="#d7c2a8"/>
+    <path d="M290 410C300 240 600 240 610 410C585 335 525 300 450 300C375 300 315 335 290 410Z" fill="#1f2937"/>
+    <path d="M285 610C285 525 350 470 450 470C550 470 615 525 615 610V940H285Z" fill="#111827"/>
+    <path d="M330 610C370 655 530 655 570 610" stroke="#facc15" stroke-width="18" stroke-linecap="round" opacity="0.65"/>
+    <rect x="315" y="720" width="270" height="50" rx="25" fill="#facc15" opacity="0.35"/>
+  </g>
+  <text x="450" y="1010" font-family="Georgia,serif" font-size="84" font-weight="700" text-anchor="middle" fill="#f8fafc">Aventurine</text>
+  <text x="450" y="1085" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" fill="#facc15" letter-spacing="4">PROBABILIDADE</text>
+  <text x="450" y="170" font-family="Arial,sans-serif" font-size="110" font-weight="800" text-anchor="middle" fill="#ffffff" opacity="0.08">A</text>
+</svg>
