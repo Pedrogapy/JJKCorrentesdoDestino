@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arquivos Kamimori</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">档</span>
+        <div>
+          <h1>Arquivos Kamimori</h1>
+          <p>Setor de Arquivos / Colégio Jujutsu</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <button class="menu-btn active" data-view="overview">Visão Geral</button>
+        <button class="menu-btn" data-view="cases">Casos</button>
+        <button class="menu-btn" data-view="victims">Vítimas</button>
+        <button class="menu-btn" data-view="clues">Pistas</button>
+        <button class="menu-btn" data-view="notes">Anotações</button>
+      </nav>
+
+      <div class="status-card">
+        <span class="status-label">Status</span>
+        <strong>Investigação em andamento</strong>
+        <p>Fenômenos de rota, nomes apagados e dobras de caminho.</p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Dossiê interno</p>
+          <h2 id="view-title">Visão Geral</h2>
+        </div>
+
+        <div class="search-box">
+          <input id="searchInput" type="text" placeholder="Buscar caso, vítima ou pista..." />
+        </div>
+      </header>
+
+      <section id="overview" class="view active-view">
+        <div class="hero-card">
+          <div class="hero-text">
+            <p class="eyebrow">Caso principal</p>
+            <h3>A Rua Que Aprendeu Seus Nomes</h3>
+            <p>
+              Três desaparecimentos temporários foram registrados na Rua Kamimori.
+              Todas as vítimas retornaram vivas, mas confusas. Todas mencionaram
+              uma placa sem nome.
+            </p>
+          </div>
+          <div class="hero-stamp">USO INTERNO</div>
+        </div>
+
+        <div class="grid two">
+          <article class="panel">
+            <h3>Resumo preliminar</h3>
+            <p>
+              A Rua Kamimori aparenta ser uma rua comercial antiga e comum, mas
+              apresenta sinais de dobra local: rotas falsas, placas sem identificação
+              e respostas anormais a nomes próprios.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>Hipótese atual</h3>
+            <p>
+              O fenômeno pode não ser um domínio completo. A hipótese mais segura é
+              uma dobra de caminho usando nomes, medo e memória como âncoras.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cases" class="view">
+        <div id="caseList" class="card-list"></div>
+      </section>
+
+      <section id="victims" class="view">
+        <div id="victimList" class="card-list"></div>
+      </section>
+
+      <section id="clues" class="view">
+        <div id="clueList" class="card-list"></div>
+      </section>
+
+      <section id="notes" class="view">
+        <article class="document">
+          <p class="eyebrow">Anotação recuperada</p>
+          <h3>Papel encontrado nos restos da Loja Sem Nome</h3>
+
+          <blockquote>
+            Se esta anotação chegou até alguém,<br />
+            a Rua Kamimori já começou a aprender.<br /><br />
+
+            As dobras não são portas.<br />
+            São erros de caminho.<br /><br />
+
+            Se ouvir seu nome,<br />
+            não responda.<br />
+            Se vir uma placa vazia,<br />
+            não siga sozinho.<br /><br />
+
+            A loja não estava aqui ontem.<br />
+            Hoje ela está.<br />
+            Amanhã talvez esteja em outro lugar.
+          </blockquote>
+
+          <p>
+            A anotação não parece ter sido produzida pela maldição. O texto é técnico,
+            organizado e indica observação prévia do local.
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
