@@ -74,8 +74,7 @@ const DB = {
         "Todos os civis relataram esquecimento parcial após sair.",
         "A palavra 'número' aparece repetidamente nos depoimentos, mesmo sem pergunta direta."
       ],
-      kiyomi: "A escadaria parece menos uma passagem e mais um teste de orientação. Se o padrão estiver correto, ela talvez só apareça para pessoas que procuram um atalho ou sentem que estão atrasadas.",
-      gm: "Bom caso para sessão curta de investigação. Pode virar uma dobra vertical, onde subir demais leva ao mesmo ponto emocional do personagem."
+      kiyomi: "A escadaria parece menos uma passagem e mais um teste de orientação. Se o padrão estiver correto, ela talvez só apareça para pessoas que procuram um atalho ou sentem que estão atrasadas."
     },
     "quarto-0-b": {
       title: "Caso 2 — Quarto 0-B",
@@ -95,8 +94,7 @@ const DB = {
         "Algumas testemunhas descrevem cheiro de álcool hospitalar muito forte.",
         "Nenhuma câmera mostra a porta, mas há falhas de imagem no corredor."
       ],
-      kiyomi: "O nome '0-B' é estranho. Não parece uma sala esquecida; parece uma sala tentando se encaixar em uma lógica administrativa. Isso é mais preocupante do que uma aparição comum.",
-      gm: "Bom caso para suspense investigativo, envolvendo memória hospitalar, pacientes que lembram de alguém que nunca existiu e registros apagados."
+      kiyomi: "O nome '0-B' é estranho. Não parece uma sala esquecida; parece uma sala tentando se encaixar em uma lógica administrativa. Isso é mais preocupante do que uma aparição comum."
     },
     "viela-do-sino-mudo": {
       title: "Caso 3 — Viela do Sino Mudo",
@@ -116,8 +114,7 @@ const DB = {
         "Animais evitam o muro final durante as noites de chuva.",
         "O termo 'mudo' foi usado por mais de uma testemunha, sem combinação prévia."
       ],
-      kiyomi: "O sino não precisa existir fisicamente para orientar uma rota. Sons também podem funcionar como placa. Isso torna o caso mais próximo da Rua Kamimori do que parecia no relatório antigo.",
-      gm: "Bom caso para investigação sensorial. Pode ser usado para provocar dúvida sem precisar de combate imediato."
+      kiyomi: "O sino não precisa existir fisicamente para orientar uma rota. Sons também podem funcionar como placa. Isso torna o caso mais próximo da Rua Kamimori do que parecia no relatório antigo."
     }
   },
   professors: [
@@ -126,7 +123,7 @@ const DB = {
       name: "Daiki Arashiro",
       role: "Diretor da instituição",
       type: "Direção",
-      portrait: "assets/portraits/daiki-arashiro.png",
+      portrait: "assets/portraits/daiki-arashiro.svg",
       public: "Diretor do Colégio Jujutsu. Figura administrativa máxima da instituição e responsável por decisões de risco elevado.",
       kiyomi: "Daiki mantém mais arquivos fora do sistema comum do que admite. Não parece negligência; parece controle. Trata funcionários e alunos como recursos preciosos, não de forma fria, mas estratégica. Sabe mais sobre chaves, selos e rotas do que costuma registrar em documentos compartilhados.",
       technique: "Presença e ordem. Registros antigos indicam uma técnica de imposição de presença capaz de nocautear, pressionar e forçar obediência em certas condições.",
@@ -137,7 +134,7 @@ const DB = {
       name: "Sakura Gojo",
       role: "Professora de teoria amaldiçoada",
       type: "Professora",
-      portrait: "assets/portraits/sakura-gojo.png",
+      portrait: "assets/portraits/sakura-gojo.svg",
       public: "Responsável por aulas teóricas avançadas sobre energia amaldiçoada, leitura de fenômenos e fundamentos de técnicas.",
       kiyomi: "Sakura percebe detalhes que outras pessoas não sabem que revelaram. Mantém postura ocupada e irônica, mas evita ser cruel com alunos. Só reconhece autoridade quando considera a pessoa realmente acima dela em competência ou força.",
       technique: "Seis Olhos / leitura avançada de energia. Capacidade elevada de análise, precisão e interpretação de fenômenos.",
@@ -148,7 +145,7 @@ const DB = {
       name: "Sayuri Aozora",
       role: "Professora de combate",
       type: "Professora",
-      portrait: "assets/portraits/sayuri-aozora.png",
+      portrait: "assets/portraits/sayuri-aozora.svg",
       public: "Responsável por treinamento físico, combate aplicado e reação em campo.",
       kiyomi: "Sayuri parece relaxada quando não há perigo, mas muda muito rápido quando percebe ameaça real. A leitura corporal dela é assustadoramente precisa. É uma das melhores pessoas para avaliar se um aluno está pronto para uma missão perigosa.",
       technique: "Liberação de gases pela pele. Pode controlar tipo e quantidade, incluindo substâncias incapacitantes.",
@@ -159,7 +156,7 @@ const DB = {
       name: "Akane Kurogami",
       role: "Enfermeira da instituição",
       type: "Suporte médico",
-      portrait: "assets/portraits/akane-kurogami.png",
+      portrait: "assets/portraits/akane-kurogami.svg",
       public: "Responsável pela enfermaria, recuperação pós-missão e triagem médica dos alunos e funcionários.",
       kiyomi: "Akane sabe curar, mas também entende como ferimentos se tornam armas. Ela não demonstra interesse em usar a técnica ofensivamente, o que talvez seja exatamente o que a torna segura para a enfermaria. Guarda registros médicos melhor do que muitos professores guardam relatórios.",
       technique: "Manipulação de feridas, doenças e ferimentos graves. Registros indicam capacidade de curar quadros severos com treinamento e vontade adequados.",
@@ -170,7 +167,7 @@ const DB = {
       name: "Akiya",
       role: "Professora e ferreira",
       type: "Professora / Forja",
-      portrait: "assets/portraits/akiya.png",
+      portrait: "assets/portraits/akiya.svg",
       public: "Responsável por armas, manutenção de equipamentos e orientação prática sobre objetos amaldiçoados.",
       kiyomi: "Akiya não gosta de rodeios. Quando recusa um pedido, normalmente é porque sabe o que aquele objeto faria com a pessoa. Seu trabalho na forja mostra mais cuidado do que suas falas deixam parecer.",
       technique: "Não registrada em detalhes no arquivo comum. Competência física e técnica de forja acima da média.",
@@ -181,7 +178,7 @@ const DB = {
       name: "Aventurine",
       role: "Professor, alfaiate e especialista em probabilidade",
       type: "Professor / Alfaiataria",
-      portrait: "assets/portraits/aventurine.png",
+      portrait: "assets/portraits/aventurine.svg",
       public: "Professor conhecido por elegância, riqueza e produção de roupas amaldiçoadas com efeitos discretos de sorte e desvio de azar.",
       kiyomi: "Aventurine age como se tudo fosse jogo, mas sua paciência com pessoas solitárias ou quebradas é mais consistente do que ele admite. A alfaiataria dele é uma forma de ajudar sem depender exclusivamente da própria sorte.",
       technique: "Manipulação de probabilidade. Pode distorcer sorte própria e influenciar a sorte de outros com encantamentos. Domínios podem existir por aspecto compreendido da técnica.",
@@ -192,7 +189,7 @@ const DB = {
       name: "Yuka Okkotsu",
       role: "Professora e feiticeira jujutsu",
       type: "Professora",
-      portrait: "assets/portraits/yuka-okkotsu.png",
+      portrait: "assets/portraits/yuka-okkotsu.svg",
       public: "Professora de alto nível, conhecida por postura séria, calma e atuação em técnicas de invocação/sombra.",
       kiyomi: "Yuka controla a própria presença muito bem. Não costuma desperdiçar palavras. Quando ela intervém, é porque já avaliou que a situação passou do limite aceitável.",
       technique: "Técnica das Dez Sombras, conforme registros internos de combate e treinamento.",
