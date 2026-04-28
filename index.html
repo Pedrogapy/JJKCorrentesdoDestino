@@ -3,121 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arquivos de Kiyomi</title>
+  <title>Arquivo Kiyomi — Colégio Jujutsu</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="top-nav">
-    <div class="nav-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">記</span>
-        <span><strong>Arquivos de Kiyomi</strong><span>Biblioteca / Setor de Arquivos</span></span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Início</a>
-        <a href="casos/escadaria-sem-numero.html">Caso 1</a>
-        <a href="casos/quarto-0b.html">Caso 2</a>
-        <a href="casos/viela-do-sino-mudo.html">Caso 3</a>
-        <a href="publico/professores.html">Professores</a>
-        <a href="publico/instituicao.html">Instituição</a>
+  <div class="noise"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">記</div>
+        <div>
+          <h1>Arquivo Kiyomi</h1>
+          <p>Setor de Arquivos / Biblioteca</p>
+        </div>
+      </div>
+
+      <button class="mobile-close" id="closeSidebar">Fechar</button>
+
+      <nav class="nav-list" id="navList">
+        <a href="#/inicio" class="nav-link" data-route="inicio">Painel</a>
+        <a href="#/casos" class="nav-link" data-route="casos">Casos antigos</a>
+        <a href="#/pistas" class="nav-link" data-route="pistas">Pistas e objetos</a>
+        <a href="#/pessoas" class="nav-link" data-route="pessoas">Pessoas públicas</a>
+        <a href="#/maldições" class="nav-link" data-route="maldições">Maldições conhecidas</a>
+        <a href="#/glossario" class="nav-link" data-route="glossario">Glossário</a>
+        <a href="#/quadro" class="nav-link" data-route="quadro">Quadro fixado</a>
+        <a href="#/notas" class="nav-link" data-route="notas">Notas locais</a>
       </nav>
-    </div>
-  </header>
 
-  <main class="site-shell">
-    <section class="hero">
-      <div class="hero-card">
-        <p class="kicker">Arquivo público interno</p>
-        <h1>Casos menores, padrões estranhos e registros de pesquisa.</h1>
-        <p class="lead">
-          Este site reúne informações que Kiyomi manteria acessíveis para consulta futura:
-          ocorrências de baixa confirmação, fenômenos recorrentes e dados públicos da instituição.
-          Nada aqui contém conclusões sigilosas ou ordens de missão.
-        </p>
+      <div class="sidebar-card">
+        <span class="mini-label">Acesso</span>
+        <strong>Consulta pública interna</strong>
+        <p>Sem segredos da direção. Sem informações sensíveis. Útil para pesquisa dos alunos.</p>
       </div>
 
-      <aside class="side-card">
-        <div class="status-line"><span>Responsável</span><span>Kiyomi Fushizato</span></div>
-        <div class="status-line"><span>Setor</span><span>Arquivos / Biblioteca</span></div>
-        <div class="status-line"><span>Acesso</span><span>Consulta controlada</span></div>
-        <div class="status-line"><span>Uso</span><span>Pesquisa e referência</span></div>
-      </aside>
-    </section>
-
-    <section class="section">
-      <p class="kicker">Casos acessíveis</p>
-      <h2>Ocorrências catalogadas</h2>
-      <div class="search-wrap">
-        <input data-search type="text" placeholder="Buscar nos cards desta página..." />
+      <div class="sidebar-card compact">
+        <span class="mini-label">Dica</span>
+        <p>Use a busca global para cruzar nomes, locais, termos e sintomas.</p>
       </div>
-    </section>
+    </aside>
 
-    <section class="section grid three">
-      <article class="case-card" data-search-card>
-        <div class="card-top">
-          <span class="case-id">CASO 01</span>
-          <span class="tag warn">Não confirmado</span>
+    <main class="main">
+      <header class="topbar">
+        <button class="hamburger" id="openSidebar">☰</button>
+        <div>
+          <span class="mini-label" id="routeKicker">Dossiê</span>
+          <h2 id="pageTitle">Painel</h2>
         </div>
-        <h3>Escadaria sem número</h3>
-        <div class="tag-row">
-          <span class="tag">Rota anômala</span>
-          <span class="tag">Três relatos</span>
+        <div class="global-search">
+          <input id="globalSearch" type="search" placeholder="Buscar nos arquivos..." autocomplete="off" />
+          <button id="clearSearch" title="Limpar busca">×</button>
         </div>
-        <p>Uma escadaria entre dois prédios apareceu em três relatos diferentes. Nenhum mapa registrava o lugar.</p>
-        <a class="btn" href="casos/escadaria-sem-numero.html">Abrir arquivo</a>
-      </article>
+      </header>
 
-      <article class="case-card" data-search-card>
-        <div class="card-top">
-          <span class="case-id">CASO 02</span>
-          <span class="tag warn">Em análise</span>
-        </div>
-        <h3>Quarto 0-B</h3>
-        <div class="tag-row">
-          <span class="tag">Hospital antigo</span>
-          <span class="tag">Memória divergente</span>
-        </div>
-        <p>Um hospital antigo tinha um quarto que pacientes lembravam, mas funcionários negavam existir.</p>
-        <a class="btn" href="casos/quarto-0b.html">Abrir arquivo</a>
-      </article>
+      <section id="searchResults" class="search-results hidden"></section>
+      <section id="viewRoot" class="view-root"></section>
+    </main>
+  </div>
 
-      <article class="case-card" data-search-card>
-        <div class="card-top">
-          <span class="case-id">CASO 03</span>
-          <span class="tag warn">Baixa atividade</span>
-        </div>
-        <h3>Viela do Sino Mudo</h3>
-        <div class="tag-row">
-          <span class="tag">Fenômeno auditivo</span>
-          <span class="tag">Viela urbana</span>
-        </div>
-        <p>Moradores ouviam um sino tocar numa viela onde não havia templo, escola ou igreja.</p>
-        <a class="btn" href="casos/viela-do-sino-mudo.html">Abrir arquivo</a>
-      </article>
-    </section>
+  <dialog id="detailDialog" class="detail-dialog">
+    <button class="dialog-close" id="dialogClose">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
 
-    <section class="section">
-      <p class="kicker">Conhecimento público</p>
-      <h2>Páginas institucionais</h2>
-      <div class="grid two">
-        <article class="panel" data-search-card>
-          <h3>Professores e equipe conhecida</h3>
-          <p>Resumo de figuras públicas da escola: professores, suporte, arquivos, forja, transporte e enfermaria.</p>
-          <a class="btn" href="publico/professores.html">Ver página</a>
-        </article>
-        <article class="panel" data-search-card>
-          <h3>Instituição Jujutsu</h3>
-          <p>Descrição geral da escola, setores acessíveis e função de cada área para consulta básica.</p>
-          <a class="btn" href="publico/instituicao.html">Ver página</a>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="site-shell">Arquivos de Kiyomi — página de consulta. Informações incompletas por natureza.</div>
-  </footer>
-
+  <script src="assets/js/data.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
